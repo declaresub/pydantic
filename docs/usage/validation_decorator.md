@@ -132,7 +132,7 @@ In particular:
 Currently upon validation failure, a standard *pydantic* `ValidationError` is raised,
 see [model error handling](models.md#error-handling).
 
-This is helpful since it's `str()` method provides useful details of the error which occurred and methods like
+This is helpful since its `str()` method provides useful details of the error which occurred and methods like
 `.errors()` and `.json()` can be useful when exposing the errors to end users, however `ValidationError` inherits
 from `ValueError` **not** `TypeError` which may be unexpected since python would raise a `TypeError` upon invalid
 or missing arguments. This may be addressed in future by either allow a custom error or raising a different
